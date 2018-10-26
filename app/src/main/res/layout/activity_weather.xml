@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -15,17 +14,18 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/iv_home"
+            android:id="@+id/btn_home"
             android:layout_width="55dp"
             android:layout_height="wrap_content"
-            android:background="@mipmap/title_city" />
+            android:background="@mipmap/title_city"
+            android:onClick="onClick"/>
 
         <View
             android:id="@+id/v_sign"
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:layout_marginEnd="3dp"
-            android:layout_toEndOf="@+id/iv_home"
+            android:layout_toEndOf="@+id/btn_home"
             android:background="#5e5e5e" />
 
         <TextView
@@ -39,24 +39,24 @@
             android:textSize="24sp" />
 
         <Button
-            android:id="@+id/iv_update"
+            android:id="@+id/btn_update"
             android:layout_width="45dp"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:background="@mipmap/title_update" />
 
         <Button
-            android:id="@+id/iv_share"
+            android:id="@+id/btn_share"
             android:layout_width="45dp"
             android:layout_height="wrap_content"
-            android:layout_toStartOf="@+id/iv_update"
+            android:layout_toStartOf="@+id/btn_update"
             android:background="@mipmap/title_share" />
 
         <Button
-            android:id="@+id/iv_base_position"
+            android:id="@+id/btn_base_position"
             android:layout_width="45dp"
             android:layout_height="wrap_content"
-            android:layout_toStartOf="@id/iv_share"
+            android:layout_toStartOf="@id/btn_share"
             android:background="@mipmap/base_action_bar_action_city" />
     </RelativeLayout>
 
